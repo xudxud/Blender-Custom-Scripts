@@ -1,6 +1,17 @@
 import bpy
 import bmesh
 
+"""
+To use this script:
+
+1. Open Blender and go to the Scripting workspace.
+2. Create a new text block and paste the script above into the text editor.
+3. Select the mesh object you want to modify and enter Edit mode.
+4. Select the vertices or faces you want to use for alignment.
+5. Press the "Run Script" button in the text editor to execute the script.
+
+This script will align the origin's orientation to match the average normal direction of the selected points without changing the origin's location.
+"""
 
 def align_origin_orientation_to_selection():
     obj = bpy.context.object
